@@ -71,9 +71,20 @@ npm start
 
 ### 6. 停止 Bot
 
-#### 直接运行时
+#### 在 Claude Code 中运行时
 
-在运行 bot 的终端窗口中按 `Ctrl+C` 即可停止。
+找到 bot 进程并停止：
+
+```bash
+# 查找进程
+ps aux | grep "node.*index.js"
+
+# 停止进程（替换 PID 为实际的进程 ID）
+kill <PID>
+
+# 或者直接使用 pkill
+pkill -f "node.*index.js"
+```
 
 #### 使用 PM2 时
 
@@ -86,6 +97,10 @@ pm2 stop telegram-bot
 ```bash
 pm2 delete telegram-bot
 ```
+
+#### 在单独终端窗口运行时
+
+在运行 bot 的终端窗口中按 `Ctrl+C` 即可停止。
 
 ## 使用说明
 
