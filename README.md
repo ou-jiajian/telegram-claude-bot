@@ -69,6 +69,24 @@ ANTHROPIC_API_KEY=你的_API_Key
 npm start
 ```
 
+### 6. 停止 Bot
+
+#### 直接运行时
+
+在运行 bot 的终端窗口中按 `Ctrl+C` 即可停止。
+
+#### 使用 PM2 时
+
+```bash
+pm2 stop telegram-bot
+```
+
+如果需要完全删除 PM2 进程：
+
+```bash
+pm2 delete telegram-bot
+```
+
 ## 使用说明
 
 在 Telegram 中找到你的 bot，发送消息即可开始对话。
