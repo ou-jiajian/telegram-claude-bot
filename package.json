@@ -1,0 +1,19 @@
+{
+  "name": "telegram-claude-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "dev": "node --env-file=.env --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
+    "grammy": "^1.41.1",
+    "https-proxy-agent": "^8.0.0"
+  }
+}
