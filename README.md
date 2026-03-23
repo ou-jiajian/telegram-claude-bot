@@ -17,7 +17,7 @@
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/你的用户名/telegram-claude-bot.git
+git clone https://github.com/ou-jiajian/telegram-claude-bot.git
 cd telegram-claude-bot
 ```
 
